@@ -4,38 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <!-- Load Roboto font from Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+    <!-- Load the page without caching so updates to GitHub Pages can be seen straight away -->
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
     <title>Admin Dashboard</title>
   </head>
   <body>
     <div class="container">
       <div class="sidebar">
-        <div class="branding">Dashboard</div>
+        <div class="banner">
+          <img src="images/banner.svg" alt="Dashboard banner icon" />
+          Dashboard
+        </div>
         <div class="nav-top">
           <ul>
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
+            <li><img src="images/home.svg" alt="Home icon" /> Home</li>
+            <li><img src="images/profile.svg" alt="Profile icon" />Profile</li>
+            <li><img src="images/messages.svg" alt="Messages icon" />Messages</li>
+            <li><img src="images/history.svg" alt="History icon" />History</li>
+            <li><img src="images/tasks.svg" alt="Tasks icon" />Tasks</li>
+            <li><img src="images/communities.svg" alt="Communities icon" />Communities</li>
           </ul>
         </div>
         <div class="nav-bottom">
           <ul>
-            <li>Settings</li>
-            <li>Support</li>
-            <li>Privacy</li>
+            <li><img src="images/settings.svg" alt="Settings icon" />Settings</li>
+            <li><img src="images/support.svg" alt="Support icon" />Support</li>
+            <li><img src="images/privacy.svg" alt="Privacy icon" />Privacy</li>
           </ul>
         </div>
       </div>
 
       <div class="header">
         <div class="header-top">
-          <div class="search-bar">Search</div>
-          <div class="user-info">Morgan</div>
+          <div class="search-form">
+            <img src="images/search.svg" alt="Search bar icon" />
+            <form action="https://httpbin.org/post" method="post">
+              <input type="search" class="search-input"/>
+            </form>
+          </div>
+          <div class="user-info">
+            <img src="images/alert.svg" alt="Alert icon" />
+            <img src="images/pig.svg" alt="Pig user icon" class="user-icon" />Morgan Oakley
+          </div>
         </div>
         <div class="header-bottom">
-          <div class="greeting">Hi there</div>
+          <div class="greeting">
+            <img src="images/pig.svg" alt="Pig user icon" class="greeting-icon"/>
+            <p class="greeting-hi">Hi there,</p>
+            <p class="greeting-user">Morgan Oakley (@morgan)</p>
+          </div>
           <div class="header-buttons">
             <button>New</button>
             <button>Upload</button>
@@ -57,7 +82,7 @@
               </p>
             </div>
             <div class="project-card">
-              <h3>Super Cool Project</h3>
+              <h3>Less Cool Project</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -65,7 +90,7 @@
               </p>
             </div>
             <div class="project-card">
-              <h3>Super Cool Project</h3>
+              <h3>Uncool Project</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -73,7 +98,7 @@
               </p>
             </div>
             <div class="project-card">
-              <h3>Super Cool Project</h3>
+              <h3>Super Hot Project</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -81,7 +106,7 @@
               </p>
             </div>
             <div class="project-card">
-              <h3>Super Cool Project</h3>
+              <h3>Super Mid Project</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -89,7 +114,7 @@
               </p>
             </div>
             <div class="project-card">
-              <h3>Super Cool Project</h3>
+              <h3>Super Man Project</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -100,23 +125,23 @@
         </div>
 
         <div class="content-right">
-            <div class="announcements">
-                <h3>Announcements</h3>
-                <ul>
-                    <li>Site Maintenance</li>
-                    <li>Community Share Day</li>
-                    <li>Updated Privacy Policy</li>
-                </ul>
-            </div>
-            <div class="trending">
-                <h3>Trending</h3>
-                <ul>
-                    <li>@tegan</li>
-                    <li>@morgan</li>
-                    <li>@kendall</li>
-                    <li>@alex</li>
-                </ul>
-            </div>
+          <div class="announcements">
+            <h3>Announcements</h3>
+            <ul>
+              <li>Site Maintenance</li>
+              <li>Community Share Day</li>
+              <li>Updated Privacy Policy</li>
+            </ul>
+          </div>
+          <div class="trending">
+            <h3>Trending</h3>
+            <ul>
+              <li>@tegan</li>
+              <li>@morgan</li>
+              <li>@kendall</li>
+              <li>@alex</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
